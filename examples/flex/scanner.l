@@ -6,8 +6,8 @@
 
 %%
 [a-zA-z]+ { words++; chars+= strlen(yytext); }
-\n	      { chars++; lines++;                }
-.         {	chars++;                         }
+\n        { chars++; lines++;                }
+.         { chars++;                         }
 %%
 
 int yywrap(){

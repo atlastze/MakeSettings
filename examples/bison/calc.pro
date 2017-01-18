@@ -4,7 +4,7 @@
 ############################################################
 
 # Specify target name
-TARGET = wc
+TARGET = calc
 
 # Specify the #include directories which should be searched when compiling the project.
 INCLUDEPATH = .
@@ -12,12 +12,16 @@ INCLUDEPATH = .
 # Specify the source directories which should be searched when compiling the project.
 DEPENDPATH = .
 
-# Defines the header files for the project.
+# Define the header files for the project.
 HEADERS =
 
-# Defines the source files for the project.
+# Define the source files for the project.
 SOURCES = main.c
 
 # Specify a list of Lex source files.
 # All headers and source files will automatically be included in the project.
 LEXSOURCES = scanner.l
+
+# Specify a list of Yacc source files to be included in the project.
+# All headers and source files will automatically be included in the project.
+YACCSOURCES= parser.y
